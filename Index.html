@@ -1,4 +1,6 @@
-<script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'>
+mapboxgl.accessToken =
+'pk.eyJ1IjoidHJpc3Rhbmw4OCIsImEiOiJjazZtaHhmcXMwbzJlM2RvNzBrMm9vaXEyIn0.KD2XEzPXBZTgeYv1kj2a0g'</script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
 <div id='map'></div>
 <div class='map-overlay' id='features'><h2>US population density</h2><div id='pd'><p>Hover over a state!</p></div></div>
@@ -72,3 +74,8 @@ p {
   height: 10px;
   margin-right: 5px;
 }
+
+var map = new mapboxgl.Map({
+  container: 'map', // container id
+  style: 'mapbox://styles/tristanl88/ck6mo98230lim1iql4dgvyj7t' // replace this with your style URL
+});
